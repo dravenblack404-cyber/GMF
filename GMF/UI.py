@@ -107,7 +107,7 @@ PackedItem = namedtuple('PackedItem', ['name', 'position', 'dimension'])
 # Header Kustom
 st.markdown("""
 <div class="custom-header">
-    <h1>📦 GMF Electroplating Tank Optimizer</h1>
+    <h1>✈️ GMF Electroplating Tank Optimizer</h1>
     <p>Smart Tools for Optimizing Electroplating Tank Capacity and Efficiency</p>
 </div>
 """, unsafe_allow_html=True)
@@ -167,7 +167,6 @@ for i in range(num_part_types):
         part_definitions.append({'name': name, 'dims': (l, h, w), 'surface_area': sa, 'quantity': qty})
 
 
-# --- LOGIKA BACKEND & FUNGSI (Tidak diubah) ---
 def get_rotations(dims):
     w, h, d = dims
     rotations = {(w, h, d), (w, d, h), (h, w, d), (h, d, w), (d, w, h), (d, h, w)}
@@ -358,4 +357,5 @@ if st.button("🚀 Find Optimal Packing", type="primary"):
                         })
 
                     st.dataframe(details_data, use_container_width=True)
+
 
