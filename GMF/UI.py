@@ -116,7 +116,7 @@ st.markdown("Selamat datang di **Electroplating Tank Optimizer**. Aplikasi ini d
 st.markdown("For Further Information and Update Please Contact Harist (+6282288659174)")
 # --- UI Sidebar ---
 
-st.sidebar.image("assets/logo.png", use_container_width=True) # <-- TAMBAHKAN BARIS INI
+st.sidebar.image("Assets/logo.png", use_container_width=True) # <-- TAMBAHKAN BARIS INI
 
 st.sidebar.markdown("## ⚙️ Input Parameters")
 st.sidebar.markdown("---")
@@ -357,4 +357,5 @@ if st.button("🚀 Find Optimal Packing", type="primary"):
                             "Position (X, Y, Z)": f"({item.position[0]}, {item.position[1]}, {item.position[2]})",
                             "Dimensions (L, H, W)": f"{item.dimension[0]} x {item.dimension[1]} x {item.dimension[2]}"
                         })
+
                     st.dataframe(details_data, use_container_width=True)
